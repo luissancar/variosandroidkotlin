@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        button.isEnabled=false
         editTextTextPersonName.afterTextChanged {
             Toast.makeText(this,editTextTextPersonName.getText().toString(),Toast.LENGTH_SHORT).show()
             button.isEnabled=editTextTextPersonName.text.isNotEmpty()
